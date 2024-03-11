@@ -3,6 +3,11 @@
 <head>
     <!-- first time writing html for smth big haha. please dont be ass :( -->
     <style>
+        body {
+            max-height: 100vh; /* Adjust as needed */
+            overflow-y: hidden; /* Prevent vertical scrolling */
+        }
+
         .topsection-rectangle {
             position: absolute;
             top: 0;
@@ -61,15 +66,13 @@
             transform: translate(-50%, -50%);
         }
 
-        .teamforevermainblurb {
+        .top-right-text {
             position: fixed;
-            top: 70%;
+            font-family: Arial, sans-serif;
+            top: 62%; /* Adjust as needed */
             left: 50%;
-            z-index: 2;
+            font-size: 25px; /* Adjust as needed */
             transform: translate(-50%, -50%);
-
-            font-family: Arial, sans-serif; /* Change as needed */
-            font-size: 20px; /* Change as needed */
             text-align: center;
         }
 
@@ -77,7 +80,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* This makes the container take up the full height of the view */
+            height: 2500px;
         }
     </style>
 </head>
@@ -101,8 +104,9 @@
 
     <img class="s2alogo-image" src="gfx/S2A logo 2023.webp" alt="Description of the image">
 
-    <p class="teamforevermainblurb"></p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
-    
+    <div class="top-right-text">
+        <p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
+    </div>
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FGmZ6iO-akM?si=wYK532XUJhAMg6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
