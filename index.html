@@ -62,21 +62,26 @@
         }
 
         .teamforevermainblurb {
-            position: fixed;
-            top: 70%;
-            left: 50%;
-            z-index: 2;
-            transform: translate(-50%, -50%);
-
             font-family: Arial, sans-serif; /* Change as needed */
             font-size: 20px; /* Change as needed */
             text-align: center;
+            top: 50%;
+            left: 50%;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This makes the container take up the full height of the view */
         }
     </style>
 </head>
 <body>
     <img class="teamforeverlogo-image" src="gfx/Blue Black.webp" alt="Description of the image">
+
     <div class="topsection-rectangle"></div>
+
     <div class="hub-buttons">
         <button>Home</button>
         <button>About</button>
@@ -87,8 +92,17 @@
         <button>FAQs</button>
         <button>Credits</button>
     </div>
+
     <img class="s1flogo-image" src="gfx/S1F logo 2023 with icon.webp" alt="Description of the image">
+
     <img class="s2alogo-image" src="gfx/S2A logo 2023.webp" alt="Description of the image">
+
     <p class="teamforevermainblurb"></p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://youtu.be/FGmZ6iO-akM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
 </body>
 </html>
