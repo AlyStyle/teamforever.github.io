@@ -14,29 +14,35 @@
         }
         .teamforeverlogo-image {
             position: fixed;
-            top: 0%;
+            top: 10%;
             left: 50%;
             z-index: 2;
             transform: translate(-50%, -50%);
         }
-        .horizontal-buttons {
+        .hub-buttons {
             position: fixed;
-            top: 40%;
+            top: 20%;
             left: 10%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around; /* Adjust as needed */
+            justify-content: center; /* Adjust as needed */
             z-index: 2;
         }
-        .horizontal-buttons button {
+        .hub-buttons button {
             margin: 10px; /* Adjust as needed */
+            font-family: Arial, sans-serif; /* Change as needed */
+            background-color: #4CAF50; /* Non-highlight color */
+            color: white; /* Button text color */
+        }
+        .hub-buttons button:hover {
+            background-color: #45a049; /* Highlight color */
         }
     </style>
 </head>
 <body>
     <img class="teamforeverlogo-image" src="gfx/Blue Black.webp" alt="Description of the image">
     <div class="topsection-rectangle"></div>
-    <div class="horizontal-buttons">
+    <div class="hub-buttons">
         <button>Button 1</button>
         <button>Button 2</button>
         <button>Button 3</button>
