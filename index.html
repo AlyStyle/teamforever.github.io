@@ -7,16 +7,17 @@
             max-height: 10px; /* Adjust as needed */
             overflow-y: auto; /* Prevent vertical scrolling */
         }
-
+        
         .topsection-rectangle {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 0%;
+            left: 0%;
             width: 100%;
             height: 10%;
             background-color: rgb(169, 169, 169);
             z-index: 1;
         }
+
         .teamforeverlogo-image {
             position: absolute;
             top: 5%;
@@ -40,7 +41,7 @@
             font-family: Arial, sans-serif;
             background-color: #f1f1f1; /* Non-highlight color */
             color: black; /* Button text color */
-            width: 130px; 
+            width: 130%; 
             height: 50px;
             white-space: nowrap;
             outline: 2px solid white;
@@ -97,17 +98,25 @@
             position: absolute;
             font-family: Arial, sans-serif;
             top: 93%; /* Adjust as needed */
-            left: 41%;
+            left: 41.8%;
             font-size: 45px; /* Adjust as needed */
             transform: translate(-50%, -50%);
             text-align: center;
             color: rgb(208, 59, 59);
             z-index: 2;
         }
+
+        .ytbox-image {
+            position: absolute;
+            top: 100%;
+            left: 39%;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
-    <img class="teamforeverlogo-image" src="gfx/Blue Black.webp" alt="Description of the image">
+    <img class="teamforeverlogo-image" src="gfx/Blue Black.webp" alt="Description of the image" width="auto" height="auto" style="max-width: 15%">
 
     <div class="topsection-rectangle"></div>
 
@@ -122,9 +131,9 @@
         <button>Credits</button>
     </div>
 
-    <img class="s1flogo-image" src="gfx/S1F logo 2023 with icon.webp" alt="Description of the image">
+    <img class="s1flogo-image" src="gfx/S1F logo 2023 with icon.webp" alt="Description of the image" width="auto" height="auto" style="max-width: 30%" style="max-height: 20%">
 
-    <img class="s2alogo-image" src="gfx/S2A logo 2023.webp" alt="Description of the image">
+    <img class="s2alogo-image" src="gfx/S2A logo 2023.webp" alt="Description of the image" height="200">
 
     <div class="top-right-text">
         <p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
@@ -139,6 +148,8 @@
     <div class="mini-rectangle-text">
         <p>S O C I A L S</p>
     </div>
+
+    <img class="ytbox-image" src="gfx/ytbox.gif" alt="Description of the image" width="100" height="100">
     
 </body>
 </html>
