@@ -4,8 +4,8 @@
     <!-- first time writing html for smth big haha. please dont be ass :( -->
     <style>
         body {
-            max-height: 100vh; /* Adjust as needed */
-            overflow-y: hidden; /* Prevent vertical scrolling */
+            max-height: 10px; /* Adjust as needed */
+            overflow-y: auto; /* Prevent vertical scrolling */
         }
 
         .topsection-rectangle {
@@ -18,7 +18,7 @@
             z-index: 1;
         }
         .teamforeverlogo-image {
-            position: fixed;
+            position: absolute;
             top: 5%;
             left: 50%;
             z-index: 2;
@@ -26,7 +26,7 @@
         }
 
         .hub-buttons {
-            position: fixed;
+            position: absolute;
             top: 20%;
             left: 50%;
             display: flex;
@@ -51,7 +51,7 @@
         }
 
         .s1flogo-image {
-            position: fixed;
+            position: absolute;
             top: 30%;
             left: 50%;
             z-index: 2;
@@ -59,7 +59,7 @@
         }
 
         .s2alogo-image {
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             z-index: 2;
@@ -67,7 +67,7 @@
         }
 
         .top-right-text {
-            position: fixed;
+            position: absolute;
             font-family: Arial, sans-serif;
             top: 62%; /* Adjust as needed */
             left: 50%;
@@ -81,6 +81,28 @@
             justify-content: center;
             align-items: center;
             height: 2500px;
+        }
+
+        .mini-rectangle {
+            position: absolute;
+            top: 90%;
+            left: 35%;
+            right: 51%;
+            height: 16%;
+            background-color: rgb(77, 77, 77);
+            z-index: 1;
+        }
+
+        .mini-rectangle-text {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            top: 93%; /* Adjust as needed */
+            left: 41%;
+            font-size: 45px; /* Adjust as needed */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(208, 59, 59);
+            z-index: 2;
         }
     </style>
 </head>
@@ -107,8 +129,15 @@
     <div class="top-right-text">
         <p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
     </div>
+
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FGmZ6iO-akM?si=wYK532XUJhAMg6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="mini-rectangle"></div>
+
+    <div class="mini-rectangle-text">
+        <p>S O C I A L S</p>
     </div>
     
 </body>
