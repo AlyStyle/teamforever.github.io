@@ -8,17 +8,20 @@
             left: 0;
             width: 100%;
             height: 10%;
-            background-color: #ff0000; /* Change this to your preferred color */
+            background-color: #ff0000;
+            z-index: 1;
         }
         .team.forever.logo {
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 2;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <img class="absolute-image" src="Blue Black.webp" alt="Description of the image">
+    <img class="team.forever.logo" src="Blue Black.webp" alt="Description of the image">
     <div class="topsection-rectangle"></div>
 </body>
 </html>
