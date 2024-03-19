@@ -31,6 +31,32 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        .hub-buttons {
+            position: absolute;
+            top: 370px;
+            left: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+
+        .hub-buttons button {
+            margin: 0px;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1; /* Non-highlight color */
+            color: black; /* Button text color */
+            width: 120px; 
+            height: 50px;
+            white-space: nowrap;
+        }
+        .hub-buttons button:hover {
+            background-color: #0100c6; /* Highlight color */
+            color: white; /* Button text highlight color */
+        }
+
     </style>
 </head>
 <body>
@@ -39,6 +65,17 @@
     <div class="rectangle"></div>
 
     <img class="banner-image" src="gfx/banner.png" alt="Description of the image">
+
+    <div class="hub-buttons">
+        <button>Home</button>
+        <button>About</button>
+        <button>Sonic 1 Forever</button>
+        <button>Sonic 2 Absolute</button>
+        <button>Controller Setup</button>
+        <button>Community</button>
+        <button>FAQs</button>
+        <button>Credits</button>
+    </div>
     
 </body>
 </html>
