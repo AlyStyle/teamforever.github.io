@@ -116,7 +116,7 @@
         }
         
 
-        .minirectangle1 {
+        .minirectangle {
             position: absolute;
             top: 1300px;
             left: 50%;
@@ -124,18 +124,8 @@
             height: 200px;
             background-color: var(--color3);
             z-index: 1;
-            transform: translate(-110%, 0%);
+            ;
         }    
-        .minirectangle2 {
-            position: absolute;
-            top: 1300px;
-            left: 50%;
-            width: 400px;
-            height: 200px;
-            background-color: var(--color3);
-            z-index: 1;
-            transform: translate(10%, 0%);
-        }  
         
         .legalrectangle {
             transform: translate(0%, 1133%);
@@ -206,8 +196,8 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FGmZ6iO-akM?si=wYK532XUJhAMg6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div class="minirectangle1"></div>
-    <div class="minirectangle2"></div>
+    <div class="minirectangle" style="transform: translate(-110%, 0%)"></div>
+    <div class="minirectangle" style="transform: translate(10%, 0%)"></div>
 
     <div class="legalrectangle"></div>
     <div class="legaltext">
@@ -224,7 +214,6 @@
             // Get the current value of --color1
             const currentColor = getComputedStyle(document.documentElement).getPropertyValue('--color1').trim();
     
-            // Check if the current color is black (rgb(0, 0, 0))
             if (currentColor === 'rgb(0, 0, 0)') {
                 const newColor1 = 'rgb(255, 255, 255)';
                 document.documentElement.style.setProperty('--color1', newColor1);
