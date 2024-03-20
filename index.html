@@ -59,6 +59,84 @@
             background-color: #0100c6; /* Highlight color */
             color: white; /* Button text highlight color */
         }
+        .selected-button {
+            background-color: #0100c6; /* Highlight color */
+            color: white; /* Button text highlight color */
+        }
+
+        .s1flogo-image {
+            position:absolute;
+            z-index: 2;
+            top: 530px;
+            left: 48%;
+            transform: translate(-50%, -50%);
+        }
+
+        .s2alogo-image {
+            position:absolute;
+            z-index: 2;
+            top: 740px;
+            left: 49%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top-right-text {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            top: 900px; /* Adjust as needed */
+            left: 50%;
+            font-size: 20px; /* Adjust as needed */
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0%, 275%);
+        }
+        
+
+        .minirectangle1 {
+            position: absolute;
+            top: 1300px;
+            left: 50%;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(77, 77, 77);
+            z-index: 1;
+            transform: translate(-110%, 0%);
+        }    
+        .minirectangle2 {
+            position: absolute;
+            top: 1300px;
+            left: 50%;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(77, 77, 77);
+            z-index: 1;
+            transform: translate(10%, 0%);
+        }  
+        
+        .legalrectangle {
+            transform: translate(0%, 1133%);
+            width: 100%;
+            height: 100px;
+            background-color: #232323;
+        }
+
+        .legaltext {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            top: 1600px; /* Adjust as needed */
+            left: 50%;
+            font-size: 12px; /* Adjust as needed */
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+        }
+
 
     </style>
 </head>
@@ -70,14 +148,52 @@
     <img class="banner-image" src="gfx/banner.png" alt="Description of the image">
 
     <div class="hub-buttons">
-        <button>Home</button>
-        <button>About</button>
-        <button>Sonic 1 Forever</button>
-        <button>Sonic 2 Absolute</button>
-        <button>Controller Setup</button>
-        <button>Community</button>
-        <button>FAQs</button>
-        <button>Credits</button>
+        <button style="background-color: #0100c6; color: white;="">Home</button>
+        <a href="path/to/your-target-file.html">
+            <button>About</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>Sonic 1 Forever</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>Sonic 2 Absolute</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>Controller Setup</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>Community</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>FAQs</button>
+        </a>
+        <a href="path/to/your-target-file.html">
+            <button>Credits</button>
+        </a>      
+    </div>
+
+    <a href="index.html">
+        <img class="s1flogo-image" src="gfx/S1F logo 2023 with icon.webp" alt="Description of the image" height="200">
+    </a>
+
+    <a href="index.html">
+        <img class="s2alogo-image" src="gfx/S2A logo 2023.webp" alt="Description of the image" height="200">
+    </a>
+
+    <div class="top-right-text">
+        <p>Team Forever are working on fan-made projects, taking the decompilations of the<br>Sonic 1 and 2 mobile ports, and adding our own love and polish to them.</p>
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FGmZ6iO-akM?si=wYK532XUJhAMg6O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="minirectangle1"></div>
+    <div class="minirectangle2"></div>
+
+    <div class="legalrectangle"></div>
+    <div class="legaltext">
+        <p>"Sonic the Hedgehog Forever" and “Sonic the Hedgehog 2 Absolute” are non-profit fan game projects. They are not affiliated with SEGA®, Sonic Team®, or<br>Christian Whitehead in any way. Sonic the Hedgehog is a trademark of SEGA®. All copyrights regarding Sonic the Hedgehog, including characters, names, terms,<br>art, and music belong to SEGA®. All registered trademarks belong to SEGA® and Sonic Team®. Team Forever have no intent to infringe said copyrights and<br>registered trademarks. No financial gain is made from these projects.<br><br>2021 - 2024 Team Forever</p>
     </div>
     
 </body>
