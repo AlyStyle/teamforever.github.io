@@ -3,15 +3,26 @@
 <head>
     <!-- first time writing html for smth big haha. please dont be ass :( -->
     <style>
+        
+
         body {
+            --color1: #ffffff;
+            --color2: #ffffff;
+
+            background-color: var(--color1);
             margin: 0;
             padding: 0;
+        }
+
+        @font-face {
+            font-family: 'ZeroesOne';
+            src: url('fnts/ZeroesOne.ttf') format('truetype');
         }
 
         .rectangle {
             width: 100%;
             height: 100px;
-            background-color: #eaeaea;
+            background-color: var(--color1);
         }        
 
         .teamforeverlogo-image {
@@ -46,22 +57,22 @@
 
         .hub-buttons button {
             margin: 0px;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial';
             background-color: #eaeaea; /* Non-highlight color */
             color: black; /* Button text color */
             width: 120px; 
             height: 50px;
             white-space: nowrap;
             border: none;
-            outline: 2px solid white;
+            outline: 2px solid var(--color1);
         }
         .hub-buttons button:hover {
             background-color: #0100c6; /* Highlight color */
-            color: white; /* Button text highlight color */
+            color: var(--color1); /* Button text highlight color */
         }
         .selected-button {
             background-color: #0100c6; /* Highlight color */
-            color: white; /* Button text highlight color */
+            color: var(--color1); /* Button text highlight color */
         }
 
         .s1flogo-image {
@@ -134,7 +145,7 @@
             font-size: 12px; /* Adjust as needed */
             transform: translate(-50%, -50%);
             text-align: center;
-            color: #ffffff;
+            color: var(--color1);
         }
 
 
@@ -148,7 +159,7 @@
     <img class="banner-image" src="gfx/banner.png" alt="Description of the image">
 
     <div class="hub-buttons">
-        <button style="background-color: #0100c6; color: white;="">Home</button>
+        <button style="background-color: #0100c6; color: white;">Home</button>
         <a href="path/to/your-target-file.html">
             <button>About</button>
         </a>
